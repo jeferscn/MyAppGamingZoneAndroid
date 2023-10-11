@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="bottom|center"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="40dp"
+    tools:context=".view.SignUpActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="60dp"
+        android:text="Criar conta"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="10dp"
+        android:text="Nome:"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_text_first_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:hint="Insira seu nome"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="8dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:text="Sobrenome:"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_text_last_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:hint="Insira seu sobrenome"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="8dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:text="email:"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_text_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:hint="Insira seu email"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="8dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:imeOptions="actionNext"
+        android:text="senha:"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_text_password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:imeOptions="actionDone"
+        android:inputType="textVisiblePassword"
+        android:hint="Insira sua senha"
+        android:paddingHorizontal="8dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/white"
+        android:text="Criar conta"
+        android:textColor="@color/blueMain"
+        android:textSize="16sp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

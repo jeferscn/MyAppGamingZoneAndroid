@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="2000dp"
+    android:gravity="top"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    tools:context=".view.GamingRoomActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_welcome_player_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:ellipsize="end"
+                android:textAlignment="center"
+                tools:text="Bem-vindo\nPlayer Name!"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_jokenpo_game"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="16dp"
+                android:backgroundTint="@color/blueMain"
+                app:cardCornerRadius="12dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:gravity="center_vertical"
+                    android:padding="16dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginEnd="16dp"
+                        android:tint="@color/white"
+                        app:srcCompat="@drawable/pedra" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jokenpo"
+                        android:textColor="@color/white"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_user_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:text="Deslogar conta"
+        android:backgroundTint="@color/blueMain"/>
+
+</FrameLayout>

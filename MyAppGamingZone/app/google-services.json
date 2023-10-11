@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "675646831134",
+    "firebase_url": "https://myappgamingzone-default-rtdb.firebaseio.com",
+    "project_id": "myappgamingzone",
+    "storage_bucket": "myappgamingzone.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675646831134:android:b5f41d168e84bcc831cc0f",
+        "android_client_info": {
+          "package_name": "pereira.jeferson.myappgamingzone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2oGzn39NznrMLtloiIf6XmXAsN0M7ud0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
